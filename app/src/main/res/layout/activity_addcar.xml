@@ -38,7 +38,7 @@
         android:layout_marginBottom="20dp">
 
         <TextView
-            android:id="@+id/addBrandTxt"
+            android:id="@+id/addBrandText"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:text="@string/brandText"
@@ -46,7 +46,7 @@
             android:padding="10dp"/>
 
         <EditText
-            android:id="@+id/addBrandSpace"
+            android:id="@+id/addBrand"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:textSize="15sp"
@@ -69,7 +69,7 @@
         android:layout_marginBottom="20dp">
 
         <TextView
-            android:id="@+id/addModelTxt"
+            android:id="@+id/addModelText"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:text="@string/modelText"
@@ -77,7 +77,7 @@
             android:padding="10dp"/>
 
         <EditText
-            android:id="@+id/addModelSpace"
+            android:id="@+id/addModel"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:textSize="15sp"
@@ -100,7 +100,7 @@
         android:layout_marginBottom="20dp">
 
         <TextView
-            android:id="@+id/addPriceTxt"
+            android:id="@+id/addPriceText"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:text="@string/priceText"
@@ -108,7 +108,7 @@
             android:padding="10dp"/>
 
         <EditText
-            android:id="@+id/addPriceSpace"
+            android:id="@+id/addPrice"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:textSize="15sp"
@@ -129,7 +129,7 @@
         android:paddingRight="20dp"
         android:paddingLeft="20dp">
         <Button
-            android:id="@+id/addcar2btn"
+            android:id="@+id/addCarButton2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/addCarText"
@@ -138,7 +138,7 @@
 
     </LinearLayout>
     <LinearLayout
-        android:id="@+id/backbtnLayout"
+        android:id="@+id/backButtonLayout"
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -149,7 +149,7 @@
         android:layout_marginBottom="20dp">
 
         <Button
-            android:id="@+id/backBtn"
+            android:id="@+id/backButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/backButton"

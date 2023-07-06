@@ -15,7 +15,7 @@
         android:layout_height="200dp"
         android:layout_alignParentTop="true"
         android:layout_marginTop="70dp"
-        android:contentDescription="addcar"
+        android:contentDescription="@string/carimg"
         app:srcCompat="@drawable/pngwing_com" />
 
     <LinearLayout
@@ -29,22 +29,22 @@
         >
 
         <Button
-            android:id="@+id/addCarBtn"
-            android:layout_width="120dp"
+            android:id="@+id/addCarButton"
+            android:layout_width="130dp"
             android:layout_height="60dp"
             android:backgroundTint="#FF69B4
 "
-            android:text="Add Car"
+            android:text="@string/addCarButton"
             android:textColor="@color/black" />
 
         <Button
-            android:id="@+id/checkCarBtn"
-            android:layout_width="120dp"
+            android:id="@+id/checkCarButton"
+            android:layout_width="130dp"
             android:layout_height="60dp"
             android:layout_marginTop="20dp"
             android:backgroundTint="#FF69B4
 "
-            android:text="Check Car"
+            android:text="@string/checkCarButton"
             android:textColor="@color/black"
             tools:ignore="RelativeOverlap,TextSizeCheck" />
     </LinearLayout>
