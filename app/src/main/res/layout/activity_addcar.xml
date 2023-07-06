@@ -5,120 +5,155 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ADD8E6">
+    android:background="#FF9CCE">
+
 
     <TextView
-        android:id="@+id/checkCarTopic"
+        android:id="@+id/addCarTopic"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Add Car"
+        android:text="@string/addCarText"
         android:textAlignment="center"
-        android:textColor="#1B5E20"
-        android:textSize="25sp" />
-
+        android:textSize="25sp"/>
 
     <ImageView
         android:id="@+id/bgCar"
-        android:layout_width="173dp"
-        android:layout_height="131dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="50dp"
-        android:contentDescription="car"
-        app:srcCompat="@drawable/free_car_icon_2893_thumb" />
+        android:layout_marginTop="60dp"
+        android:contentDescription="@string/carimg"
+        app:srcCompat="@drawable/pngwing_com" />
 
-
-    <EditText
-        android:id="@+id/checkBrandEx"
-        android:layout_width="200dp"
+    <LinearLayout
+        android:id="@+id/brandLayout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="46dp"
-        android:layout_marginBottom="397dp"
-        android:background="@color/white"
-        android:inputType="text"
-        android:minHeight="48dp"
-        android:textSize="15sp"
-        tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck" />
+        android:layout_below="@id/bgCar"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:layout_marginBottom="20dp">
 
-    <TextView
-        android:id="@+id/checkBrandTxt"
-        android:layout_width="205dp"
+        <TextView
+            android:id="@+id/addBrandTxt"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/brandText"
+            android:textSize="15sp"
+            android:padding="10dp"/>
+
+        <EditText
+            android:id="@+id/addBrandSpace"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:inputType="text"
+            android:background="@color/white"
+            android:autofillHints=""
+            tools:ignore="LabelFor"
+            android:padding="12dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/modelLayout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="135dp"
-        android:layout_marginBottom="408dp"
-        android:text="Brand"
-        android:textColor="#1B5E20"
-        android:textSize="15sp"
-        tools:ignore="VisualLintOverlap" />
+        android:layout_below="@id/brandLayout"
+        android:gravity="center"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:layout_marginBottom="20dp">
 
-    <EditText
-        android:id="@+id/checkModelEx"
-        android:layout_width="200dp"
+        <TextView
+            android:id="@+id/addModelTxt"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/modelText"
+            android:textSize="15sp"
+            android:padding="10dp"/>
+
+        <EditText
+            android:id="@+id/addModelSpace"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:inputType="text"
+            android:background="@color/white"
+            android:autofillHints=""
+            tools:ignore="LabelFor"
+            android:padding="12dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/priceLayout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="46dp"
-        android:layout_marginBottom="325dp"
-        android:background="@color/white"
-        android:inputType="text"
-        android:minHeight="48dp"
-        android:textSize="15sp"
-        tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck" />
+        android:layout_below="@id/modelLayout"
+        android:gravity="center"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:layout_marginBottom="20dp">
 
-    <Button
-        android:id="@+id/checkPriceBtn"
-        android:layout_width="wrap_content"
+        <TextView
+            android:id="@+id/addPriceTxt"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/priceText"
+            android:textSize="15sp"
+            android:padding="10dp"/>
+
+        <EditText
+            android:id="@+id/addPriceSpace"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:inputType="text"
+            android:background="@color/white"
+            android:autofillHints=""
+            tools:ignore="LabelFor"
+            android:padding="12dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/addCarLayout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="109dp"
-        android:layout_marginBottom="250dp"
-        android:textColor="@color/black"
-        android:backgroundTint="#46b4e7"
-        android:text="Check Price" />
+        android:layout_below="@id/priceLayout"
+        android:gravity="center"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp">
+        <Button
+            android:id="@+id/addcar2btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/addCarText"
+            android:textColor="@color/black"
+            android:backgroundTint="#FF69B4" />
 
-    <TextView
-        android:id="@+id/carPriceText"
-        android:layout_width="205dp"
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/backbtnLayout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="140dp"
-        android:layout_marginBottom="178dp"
-        android:text="Price"
-        android:textColor="#1B5E20"
-        android:textSize="15sp"
-        tools:ignore="TextSizeCheck,VisualLintOverlap" />
+        android:layout_below="@id/addCarLayout"
+        android:gravity="center"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:layout_marginBottom="20dp">
 
-    <EditText
-        android:id="@+id/checkPriceEx"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="46dp"
-        android:layout_marginBottom="166dp"
-        android:background="@color/white"
-        android:inputType="text"
-        android:minHeight="48dp"
-        android:textSize="15sp"
-        tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck" />
-
-    <TextView
-        android:id="@+id/carModelTxt"
-        android:layout_width="205dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="135dp"
-        android:layout_marginBottom="338dp"
-        android:text="Model"
-        android:textColor="#1B5E20"
-        android:textSize="15sp"
-        tools:ignore="TextSizeCheck,VisualLintOverlap" />
-
-
+        <Button
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/backButton"
+            android:textColor="@color/black"
+            android:backgroundTint="#FF69B4"/>
+    </LinearLayout>
 </RelativeLayout>
