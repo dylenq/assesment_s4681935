@@ -1,18 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-    <TextView
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:text="Hello World!"
-      app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintTop_toTopOf="parent" />
+    tools:context="com.assesment_s4681935.MainActivity"
+    android:background="#89CFF0">
 
-  </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/bgCar"
+        android:layout_width="173dp"
+        android:layout_height="131dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="70dp"
+        android:contentDescription="addcar"
+        app:srcCompat="@drawable/free_car_icon_2893_thumb"
+        tools:srcCompat="@drawable/free_car_icon_2893_thumb" />
+
+    <LinearLayout
+        android:id="@+id/btnLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="276dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_below="@id/bgCar"
+        android:layout_marginStart="130dp"
+        >
+
+        <Button
+            android:id="@+id/addCarBtn"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:backgroundTint="#46b4e7"
+            android:text="Add Car"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/checkCarBtn"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#46b4e7"
+            android:text="Check Car"
+            android:textColor="@color/black"
+            tools:ignore="RelativeOverlap,TextSizeCheck" />
+    </LinearLayout>
+
+</RelativeLayout>
