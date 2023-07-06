@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.assesment_s4681935.MainActivity"
-    android:background="#89CFF0">
+    android:background="#FF9CCE">
 
 
     <ImageView
@@ -17,7 +17,7 @@
         android:layout_marginTop="70dp"
         android:contentDescription="addcar"
         app:srcCompat="@drawable/free_car_icon_2893_thumb"
-        tools:srcCompat="@drawable/free_car_icon_2893_thumb" />
+        tools:srcCompat="@drawable/pngwing_com" />
 
     <LinearLayout
         android:id="@+id/btnLayout"
@@ -33,7 +33,8 @@
             android:id="@+id/addCarBtn"
             android:layout_width="120dp"
             android:layout_height="60dp"
-            android:backgroundTint="#46b4e7"
+            android:backgroundTint="#FF69B4
+"
             android:text="Add Car"
             android:textColor="@color/black" />
 
@@ -42,7 +43,8 @@
             android:layout_width="120dp"
             android:layout_height="60dp"
             android:layout_marginTop="20dp"
-            android:backgroundTint="#46b4e7"
+            android:backgroundTint="#FF69B4
+"
             android:text="Check Car"
             android:textColor="@color/black"
             tools:ignore="RelativeOverlap,TextSizeCheck" />
