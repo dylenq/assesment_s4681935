@@ -11,13 +11,12 @@
 
     <ImageView
         android:id="@+id/bgCar"
-        android:layout_width="173dp"
-        android:layout_height="131dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
         android:layout_alignParentTop="true"
         android:layout_marginTop="70dp"
         android:contentDescription="addcar"
-        app:srcCompat="@drawable/free_car_icon_2893_thumb"
-        tools:srcCompat="@drawable/pngwing_com" />
+        app:srcCompat="@drawable/pngwing_com" />
 
     <LinearLayout
         android:id="@+id/btnLayout"
