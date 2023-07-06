@@ -1,4 +1,17 @@
 <resources>
-    <string name="app_name">assesment_s4681935</string>
+    <string name="app_name">assessment_s4669024-s4669021</string>
+
+    <string name="addCarButton">ADD CAR</string>
+    <string name="checkCarButton">CHECK CAR</string>
+    <string name="checkPriceButton">CHECK PRICE</string>
+    <string name="carimg">pinkCar</string>
+    <string name="brandText">Car Brand</string>
+    <string name="addCarText">Add Car</string>
+    <string name="modelText">Car Model</string>
+    <string name="priceText">Car Price</string>
+    <string name="checkCarText">Check Car</string>
+    <string name="backButton">Back</string>
+
+
 
 </resources>
