@@ -5,8 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.assesment_s4681935.MainActivity"
-    android:background="#FF9CCE">
+    tools:context=".MainActivity"
+    android:background="#ADD8E6">
 
 
     <ImageView
@@ -32,7 +32,7 @@
             android:id="@+id/addCarButton"
             android:layout_width="130dp"
             android:layout_height="60dp"
-            android:backgroundTint="#FF69B4
+            android:backgroundTint="#008b8b
 "
             android:text="@string/addCarButton"
             android:textColor="@color/black" />
@@ -42,7 +42,7 @@
             android:layout_width="130dp"
             android:layout_height="60dp"
             android:layout_marginTop="20dp"
-            android:backgroundTint="#FF69B4
+            android:backgroundTint="#008b8b
 "
             android:text="@string/checkCarButton"
             android:textColor="@color/black"

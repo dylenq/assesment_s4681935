@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FF9CCE">
+    android:background="#ADD8E6">
 
     <TextView
         android:id="@+id/checkCarTopic"
@@ -76,7 +76,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="109dp"
         android:layout_marginBottom="250dp"
-        android:backgroundTint="#FF69B4"
+        android:backgroundTint="#008b8b"
         android:text="@string/checkPriceButton"
         android:textColor="@color/black" />
 
@@ -128,7 +128,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="153dp"
         android:layout_marginBottom="86dp"
-        android:backgroundTint="#FF69B4"
+        android:backgroundTint="#008b8b"
         android:text="@string/backButton"
         android:textColor="@color/black" />
 

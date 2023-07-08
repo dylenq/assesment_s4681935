@@ -1,15 +1,16 @@
 package com.assesment_s4681935;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-import com.assesment_s4681935.R;
-import androidx.appcompat.app.AppCompatActivity;
-public abstract class ActivityCheckCar extends AppCompatActivity implements View.OnClickListener{
 
-    Button checkPriceButton;
+import androidx.appcompat.app.AppCompatActivity;
+public class ActivityCheckCar extends AppCompatActivity implements View.OnClickListener{
+
+    Button checkPriceButton,backButton;
     EditText checkBrand,checkModel,checkPrice;
     DBHelper DBHelper;
 
@@ -19,7 +20,7 @@ public abstract class ActivityCheckCar extends AppCompatActivity implements View
         setContentView(R.layout.activity_checkcar);
 
         checkPriceButton = findViewById(R.id.checkPriceButton);
-
+        backButton=findViewById(R.id.backButton);
 
         checkBrand = findViewById(R.id.checkBrand);
         checkModel = findViewById(R.id.checkModel);
@@ -27,14 +28,17 @@ public abstract class ActivityCheckCar extends AppCompatActivity implements View
 
 
         checkPriceButton.setOnClickListener(this);
-
+        backButton.setOnClickListener(this);
         DBHelper = new DBHelper(this);
     }
 
     @Override
     public void onClick(View view) {
         int id = view.getId();
-
+        if(id == R.id.backButton)
+        {
+            gotoHomePage();
+        }
         if(id == R.id.checkPriceButton) {
             viewPrice();
         }
@@ -59,5 +63,9 @@ public abstract class ActivityCheckCar extends AppCompatActivity implements View
             checkPrice.setText(String.valueOf(price));
         }
     }
-
+    private void gotoHomePage()
+    {
+       Intent intent=new Intent(this,MainActivity.class);
+       startActivity(intent);
+    }
 }

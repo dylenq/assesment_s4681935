@@ -9,7 +9,6 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.assesment_s4681935.R;
 
 public class ActivityAddCar extends AppCompatActivity implements View.OnClickListener{
 

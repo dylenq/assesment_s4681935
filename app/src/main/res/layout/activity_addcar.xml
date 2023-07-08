@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FF9CCE">
+    android:background="#ADD8E6">
 
 
     <TextView
@@ -134,7 +134,7 @@
             android:layout_height="wrap_content"
             android:text="@string/addCarText"
             android:textColor="@color/black"
-            android:backgroundTint="#FF69B4" />
+            android:backgroundTint="#008b8b" />
 
     </LinearLayout>
     <LinearLayout
@@ -154,6 +154,6 @@
             android:layout_height="wrap_content"
             android:text="@string/backButton"
             android:textColor="@color/black"
-            android:backgroundTint="#FF69B4"/>
+            android:backgroundTint="#008b8b"/>
     </LinearLayout>
 </RelativeLayout>
