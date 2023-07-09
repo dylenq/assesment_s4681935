@@ -7,6 +7,17 @@
     android:layout_height="match_parent"
     android:background="#ADD8E6">
 
+    <TextView
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Assesment_s4681935_s4681325"
+        android:textColor="@color/white"
+        android:paddingLeft="20dp"
+        android:paddingTop="8dp"
+        android:textSize="20sp"
+        android:background="#603FEF"
+        />
 
     <TextView
         android:id="@+id/addCarTopic"
@@ -14,7 +25,9 @@
         android:layout_height="wrap_content"
         android:text="@string/addCarText"
         android:textAlignment="center"
-        android:textSize="25sp"/>
+        android:textSize="25sp"
+        android:layout_below="@id/titlebar"/>
+
 
     <ImageView
         android:id="@+id/bgCar"
